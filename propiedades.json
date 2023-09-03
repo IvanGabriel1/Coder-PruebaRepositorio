@@ -1,0 +1,68 @@
+[
+  {
+    "ciudad": "Capital Federal",
+    "barrio": "Villa del Parque",
+    "ambientes": 3,
+    "metros": 55,
+    "precio": 75000,
+    "numero": 1,
+    "telefono": 1159785291,
+    "mail": "ivangabraun@gmail.com",
+    "disponibilidad": ["lunes", "martes", "miercoles"]
+  },
+  {
+    "ciudad": "Capital Federal",
+    "barrio": "Devoto",
+    "ambientes": 4,
+    "metros": 96,
+    "precio": 240000,
+    "numero": 2,
+    "telefono": 1159785291,
+    "mail": "ivangabraun@gmail.com",
+    "disponibilidad": ["lunes", "martes", "miercoles"]
+  },
+  {
+    "ciudad": "Buenos Aires",
+    "barrio": "Avellaneda",
+    "ambientes": 4,
+    "metros": 110,
+    "precio": 150000,
+    "numero": 3,
+    "telefono": 1159785291,
+    "mail": "ivangabraun@gmail.com",
+    "disponibilidad": ["lunes", "martes", "miercoles"]
+  },
+  {
+    "ciudad": "Mendoza",
+    "barrio": "Lujan de Cuyo",
+    "ambientes": 3,
+    "metros": 80,
+    "precio": 120000,
+    "numero": 4,
+    "telefono": 1159785291,
+    "mail": "ivangabraun@gmail.com",
+    "disponibilidad": ["lunes", "martes", "miercoles"]
+  },
+  {
+    "ciudad": "Capital Federal",
+    "barrio": "Villa Crespo",
+    "ambientes": 2,
+    "metros": 42,
+    "precio": 90000,
+    "numero": 5,
+    "telefono": 1159785291,
+    "mail": "ivangabraun@gmail.com",
+    "disponibilidad": ["lunes", "martes", "miercoles"]
+  },
+  {
+    "ciudad": "Capital Federal",
+    "barrio": "Monte Castro",
+    "ambientes": 1,
+    "metros": 35,
+    "precio": 65000,
+    "numero": 6,
+    "telefono": 1159785291,
+    "mail": "ivangabraun@gmail.com",
+    "disponibilidad": ["lunes", "martes", "miercoles"]
+  }
+]

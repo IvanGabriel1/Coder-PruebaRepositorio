@@ -1,0 +1,472 @@
+/**** Custom Properties ****/
+
+:root {
+  --first-color: #09386a;
+  --second-color: #ffffff;
+  --third-color: #ff8000;
+  --text-color: #000000;
+  --white-alpha50-color: rgba(255, 255, 255, 0.5);
+  --black-alpha50-color: rgba(0, 0, 0, 0.5);
+  --font: "raleway", "sans-serif";
+  --header-height: 4rem;
+  --box-shadow: 0.25rem 0.25rem 1rem rgba(58, 32, 32, 0.5);
+}
+
+/**** Reset ****/
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Custom Propierties */
+#ingresar,
+#propiedades,
+#contacto {
+  scroll-margin-top: var(--header-height);
+}
+
+.section-title {
+  padding: 1rem;
+  color: var(--third-color);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Header:*/
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--first-color);
+  height: var(--header-height);
+}
+
+.header-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.header-nav-container a {
+  text-decoration: none;
+  color: var(--second-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1.25rem;
+  align-self: center;
+}
+
+/* Hero Image / Inicio: */
+
+.hero-image {
+  background-image: url("../assets/hero-image.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-image-opacity {
+  top: var(--header-height);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-title {
+  color: var(--second-color);
+  font-size: 7vw;
+}
+
+/* Inicio: */
+.nosotros {
+  height: 95vh;
+}
+
+.usuario-form {
+  width: 90%;
+  border: medium solid var(--third-color);
+  border-radius: 10px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.usuario-form input {
+  width: 45%;
+  height: 2rem;
+  margin: 1rem;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  display: inline-block;
+}
+
+.usu-form-tel,
+.usu-form-edad {
+  appearance: none;
+}
+
+.usu-form-submit {
+  background-color: var(--third-color);
+  border-radius: 10px;
+  width: 200px;
+  height: 2rem;
+}
+
+.usu-form-submit:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+/* Propiedades */
+.propiedades {
+  background-color: lightgray;
+  padding-bottom: 1rem;
+}
+
+/* Btn Filtros */
+#filtros-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#filtros-container button {
+  width: 200px;
+  height: 36px;
+  display: block;
+  background-color: #09386a;
+  color: #ffffff;
+  margin: 1rem auto 0 auto;
+  cursor: pointer;
+  border-radius: 50px;
+  border: medium solid var(--third-color);
+  font-size: 16px;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(58, 32, 32, 0.5);
+}
+
+#filtros-container button:hover {
+  border-color: var(--first-color);
+  opacity: 70%;
+}
+
+.label-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.label-container input {
+  width: 1rem;
+  border: thin solid black;
+}
+
+/* Fin btn filtros */
+.sectionInputSP {
+  width: 90%;
+  margin: auto;
+  display: none;
+}
+
+.sectionInputSP input {
+  width: 250px;
+  margin: 1rem 1rem 0 1rem;
+  height: 24px;
+  border: none;
+  border-radius: 25px;
+}
+
+.sectionInputSP button {
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: 150px;
+  height: 36px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+
+#listaPropiedades {
+  width: 90%;
+  padding: 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 10px;
+  justify-items: center;
+}
+
+#listaPropiedades li {
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+  border: thin solid var(--first-color);
+  background-color: white;
+}
+
+#listaPropiedades hr {
+  margin: 0;
+}
+
+#listaPropiedades b {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--second-color);
+  background-color: var(--first-color);
+}
+
+#listaPropiedades aside {
+  background-image: url(/assets/casa-img.jpeg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 120px;
+}
+
+.btnVisitar {
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: 150px;
+  height: 36px;
+  border: medium solid;
+  border-radius: 25px;
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+
+.btnVisitar:hover {
+  border-color: var(--first-color);
+  opacity: 70%;
+}
+
+.btnSubirProp {
+  width: 200px;
+  height: 36px;
+  display: block;
+  background-color: #09386a;
+  color: #ffffff;
+  margin: 1rem auto 0 auto;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+}
+
+/*ventana modal "Visitar"*/
+.modal {
+  width: 400px;
+  height: 425px;
+  margin: auto;
+  border: medium solid black;
+  border-radius: 10px;
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+}
+
+.modal[id|="modal-1"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-close svg {
+  display: inline-block;
+  margin-left: 92%;
+  margin-top: 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.modal h5 {
+  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-modal {
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btn-visitar-modal {
+  display: inline-block;
+  height: 1.5rem;
+  border-radius: 5px;
+  border: thin solid var(--first-color);
+  text-align: center;
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+
+.btn-visitar-modal:hover {
+  opacity: 0.7;
+}
+
+/* Contacto */
+.contacto {
+  background-color: darkgray;
+}
+
+.card-contact {
+  margin-top: 2rem;
+  width: 85vw;
+  height: 135px;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 250px;
+  text-align: center;
+}
+
+.card-serv-decoration {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.social-media-container > a {
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 0.5rem;
+}
+
+/*Footer */
+
+.footer {
+  width: 100vw;
+  height: 2rem;
+  background-color: var(--second-color);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: var(--header-height);
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-cards-container {
+    margin-right: 8vw;
+    margin-left: 8vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-contact {
+    max-width: 300px;
+    height: 150px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 1480px;
+  }
+
+  .card-contact {
+    max-width: 20vw;
+    height: 20vh;
+  }
+
+  .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 750px;
+  }
+
+  .contact-form > textarea {
+    grid-column: span 2;
+    margin-top: 1rem;
+  }
+}
